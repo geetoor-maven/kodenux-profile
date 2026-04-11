@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KodeNUX | Solusi Digital, AI, Backend & Marketplace Source Code</title>
+  <meta name="description"
+    content="KodeNUX menyediakan solusi digital profesional: pembuatan website profil perusahaan, pengembangan backend tangguh (Golang/Java), integrasi AI/Chatbot, dan marketplace aplikasi dengan full source code siap pakai.">
+  <meta name="keywords"
+    content="Jasa pembuatan website, backend development, Golang, Java, AI chatbot, marketplace source code, skripsi aplikasi, solusi digital bisnis, Kodenux">
+  <meta name="author" content="KodeNUX Team">
+  <link rel="canonical" href="https://kodenux.com/">
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+
+  <meta property="og:title" content="KodeNUX | Solusi Digital & AI Development">
+  <meta property="og:description"
+    content="Bangun ekosistem digital Anda dengan solusi backend tangguh, otomasi AI, dan aplikasi siap pakai dari KodeNUX.">
+  <meta property="og:image" content="https://kodenux.com/images/banner-kodenux.png">
+  <meta property="og:url" content="https://kodenux.com/">
+  <meta property="og:type" content="website">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 w-full z-50 font-sans">
+    <nav class="container mx-auto px-4 py-3 mt-2 md:mt-5">
+      <div
+        class="flex items-center justify-between bg-[#0a121e]/90 backdrop-blur-md border border-blue-500/20 rounded-2xl px-6 py-3 shadow-2xl">
+
+        <a href="#" class="flex items-center gap-2 text-white font-bold text-xl tracking-tight">
+          <img src="images/kodenux-logo.png" alt="Kodenux" class="h-8 w-auto">
+          Kodenux
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-medium">
+          <a href="#" class="text-gray-300 hover:text-cyan-400 transition">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-cyan-400 transition">About</a>
+          <a href="#services" class="text-gray-300 hover:text-cyan-400 transition">Services</a>
+          <a href="#marketplace-cta" class="text-gray-300 hover:text-cyan-400 transition">Marketplace</a>
+          <a href="#customer-support"
+            class="px-6 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold transition hover:scale-105">Contact</a>
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu"
+        class="hidden md:hidden flex-col bg-[#0a121e]/90 border border-blue-500/20 rounded-2xl mt-2 p-6 gap-4 text-center">
+        <a href="#" class="text-gray-300 hover:text-cyan-400">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-cyan-400">About</a>
+        <a href="#services" class="text-gray-300 hover:text-cyan-400">Services</a>
+        <a href="#marketplace-cta" class="text-gray-300 hover:text-cyan-400">Marketplace</a>
+        <a href="#customer-support"
+          class="px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="introduction" class="relative pt-32 pb-20 overflow-hidden bg-[#050a12] ">
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] -z-10">
+    </div>
+
+    <div class="container mx-auto px-6 text-center mt-20">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+        Solusi Digital Praktis <br />
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+          Untuk Kebutuhan Anda
+        </span>
+      </h1>
+
+      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+        KodeNUX membantu individu dan bisnis untuk meluncurkan produk digital dengan cepat dan efisien. Kami hadir
+        untuk menciptakan kehadiran digital Anda tanpa harus memulai dari awal.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#about"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all transform hover:-translate-y-1">
+          Kenali Lebih Jauh
+        </a>
+        <a href="#services"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/5 text-white font-semibold border border-white/10 hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+          Lihat Layanan Kami
+        </a>
+      </div>
+
+      <div class="mt-16">
+        <img src="images/banner-kodenux.png" alt="Kodenux Preview"
+          class="mx-auto rounded-2xl shadow-2xl border border-white/5 w-full max-w-4xl">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-[#0a121e]">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-4 bg-cyan-500/20 rounded-[2rem] blur-2xl"></div>
+            <img src="images/about.png" alt="Tentang KodeNUX"
+              class="relative z-10 w-full rounded-[2rem] border border-white/10 shadow-2xl object-cover">
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+          <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm">Tentang KodeNUX</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Solusi Digital Tanpa Rumit</h2>
+
+          <div class="space-y-6 text-gray-400 leading-relaxed">
+            <p>
+              KodeNUX adalah penyedia solusi digital yang berfokus pada efisiensi. Kami membantu individu, bisnis, dan
+              kreator membangun kehadiran digital yang kuat tanpa harus memulai dari awal.
+            </p>
+            <p>
+              Kami menggabungkan keahlian dalam pengembangan backend tangguh (Golang & Java), otomasi cerdas berbasis
+              AI, serta penyediaan perangkat lunak siap pakai. Fokus kami adalah memberikan solusi yang praktis,
+              skalabel, dan andal.
+            </p>
+            <p>
+              Mulai dari website profil perusahaan yang profesional hingga aplikasi pendukung tugas akhir bagi
+              mahasiswa, KodeNUX hadir untuk mengubah tantangan teknis Anda menjadi hasil yang nyata.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mt-10">
+            <div>
+              <h4 class="text-white font-bold text-2xl">100%</h4>
+              <p class="text-cyan-400 text-sm">Solusi Praktis</p>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-2xl">24/7</h4>
+              <p class="text-cyan-400 text-sm">Siap Membantu</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="py-24 bg-[#050a12] relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Mengapa Memilih Kodenux?</h2>
+        <p class="text-gray-400 max-w-xl mx-auto">Kami menggabungkan keahlian teknis tingkat tinggi dengan solusi
+          praktis untuk mempercepat transformasi digital Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-all group">
+          <div
+            class="w-14 h-14 bg-blue-900/30 rounded-2xl flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+              </path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-white mb-3">Performa & Skalabilitas</h4>
+          <p class="text-gray-400 leading-relaxed">Dibangun dengan arsitektur tangguh menggunakan Golang dan Java,
+            memastikan sistem Anda aman, cepat, dan siap menangani beban tinggi.</p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-all group">
+          <div
+            class="w-14 h-14 bg-blue-900/30 rounded-2xl flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+              </path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-white mb-3">Inovasi AI & Otomatisasi</h4>
+          <p class="text-gray-400 leading-relaxed">Kami mengubah interaksi kompleks menjadi sederhana dengan chatbot
+            cerdas dan training data kustom yang disesuaikan untuk kebutuhan Anda.</p>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-cyan-500/50 transition-all group">
+          <div
+            class="w-14 h-14 bg-blue-900/30 rounded-2xl flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-white mb-3">Efisiensi Tanpa Rumit</h4>
+          <p class="text-gray-400 leading-relaxed">Produk kami hadir sebagai solusi instan. Dari marketplace aplikasi
+            mahasiswa hingga web profil, semuanya dirancang untuk kemudahan penggunaan.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services" class="py-24 bg-[#0a121e]">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm">Layanan Kami</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mt-3">Solusi Digital Komprehensif</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+        <div class="group p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all bg-white/5">
+          <h5 class="text-xl font-semibold text-white mb-4 group-hover:text-cyan-400 transition">Corporate Web Presence
+          </h5>
+          <p class="text-gray-400 leading-relaxed">
+            Pembuatan website profil perusahaan yang profesional dan elegan. Kami memastikan bisnis Anda memiliki
+            identitas digital yang kuat, responsif, dan mudah diakses oleh calon klien.
+          </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all bg-white/5">
+          <h5 class="text-xl font-semibold text-white mb-4 group-hover:text-cyan-400 transition">High-Performance REST
+            API</h5>
+          <p class="text-gray-400 leading-relaxed">
+            Backend tangguh berbasis Golang dan Java. Membangun infrastruktur API yang skalabel, aman, dan sangat andal
+            untuk mendukung sistem bisnis Anda.
+          </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all bg-white/5">
+          <h5 class="text-xl font-semibold text-white mb-4 group-hover:text-cyan-400 transition">AI & Chatbot Solutions
+          </h5>
+          <p class="text-gray-400 leading-relaxed">
+            Layanan pengembangan chatbot cerdas dan kustomisasi training data AI. Solusi otomatisasi interaksi yang
+            responsif dan relevan bagi bisnis atau riset Anda.
+          </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all bg-white/5">
+          <h5 class="text-xl font-semibold text-white mb-4 group-hover:text-cyan-400 transition">Automated Bot Services
+          </h5>
+          <p class="text-gray-400 leading-relaxed">
+            Kembangkan bot cerdas untuk Telegram guna mengotomatisasi interaksi. Meningkatkan efisiensi komunikasi
+            bisnis dan produktivitas Anda secara real-time.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="marketplace-cta" class="py-24 bg-[#050a12]">
+    <div class="container mx-auto px-6">
+      <div class="relative overflow-hidden rounded-[3rem] border border-white/10 bg-[#0a121e] p-12 md:p-20 shadow-2xl">
+
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+
+          <div class="max-w-xl">
+            <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm">Marketplace Aplikasi</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Full Source Code, Siap Pakai</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+              Butuh aplikasi cepat untuk tugas skripsi atau kebutuhan bisnis? Temukan koleksi aplikasi siap pakai kami
+              yang ringan dan andal. Cukup pilih, bayar, dan kami akan mengirimkan <strong>full source code</strong>
+              agar Anda memiliki kendali penuh atas proyek Anda.
+            </p>
+
+            <ul class="flex flex-wrap gap-4 text-white">
+              <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Full Source Code</li>
+              <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Mudah Dipelajari</li>
+              <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Dokumentasi Lengkap</li>
+            </ul>
+          </div>
+
+          <div class="flex-shrink-0">
+            <a href="https://shop.kodenux.com" target="_blank"
+              class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all transform hover:scale-105">
+              Beli Sekarang
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-apps" class="py-24 bg-[#0a121e]">
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm">Populer di Marketplace</span>
+        <h2 class="text-3xl md:text-5xl font-bold text-white mt-3 mb-6">Aplikasi Siap Pakai untuk Anda</h2>
+        <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
+          Jelajahi koleksi aplikasi terbaik kami. Didesain untuk kebutuhan akademik dan bisnis, lengkap dengan **full
+          source code**, siap Anda gunakan dan kustomisasi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#050a12] transition-all hover:border-cyan-500/50 hover:-translate-y-2">
+          <img src="images/vot-nux.png" alt="Aplikasi Skripsi Manajemen Tugas"
+            class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-white mb-2">Sistem Pemungutan Suara Digital & E-Voting Modern</h4>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">Dibangun dengan logika backend yang kuat dan struktur
+              kode yang rapi, sistem ini sangat mudah dipahami bagi mahasiswa yang ingin mempelajari sistem E-Voting
+              dengan validasi suara yang presisi dan anti-manipulasi.</p>
+            <span class="text-cyan-400 font-bold">Rp 50.000</span>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#050a12] transition-all hover:border-cyan-500/50 hover:-translate-y-2">
+          <img src="images/kodenux-blog.png" alt="Aplikasi Point of Sale (POS)"
+            class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-white mb-2">CMS Blog CodeIgniter 3 Refactored and Modern Cyber Slate
+            </h4>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">CMS ini dibangun dengan CodeIgniter 3 yang sudah
+              di-optimasi total (Full Refactored).</p>
+            <span class="text-cyan-400 font-bold">Rp 55.000</span>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#050a12] transition-all hover:border-cyan-500/50 hover:-translate-y-2">
+          <img src="images/kost-nux.png" alt="Bot Telegram Notifikasi"
+            class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-white mb-2">Sistem Informasi Manajemen Kos Modern: Referensi Project
+              PHP dan Tailwind CSS</h4>
+            <p class="text-gray-400 text-sm mb-4 line-clamp-2">Aplikasi ini dibangun menggunakan PHP Native dan MySQL
+              yang sangat mudah untuk dimodifikasi.</p>
+            <span class="text-cyan-400 font-bold">Rp 50.000</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center">
+        <a href="https://shop.kodenux.com" target="_blank"
+          class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all transform hover:scale-105">
+          Lihat Semua Aplikasi di Marketplace
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="testimonial" class="py-24 bg-[#0a121e]">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Testimonials</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div
+          class="p-8 rounded-3xl bg-[#050a12] border border-white/10 hover:border-cyan-500/30 transition-all duration-300">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white text-2xl font-bold mb-6">
+              AR
+            </div>
+            <h5 class="text-white font-bold text-lg">Abd Rahman</h5>
+            <p class="text-cyan-400 text-sm mb-6 uppercase tracking-wider">Engineer Manager at Vulnerax</p>
+            <p class="text-gray-400 text-sm italic leading-relaxed">
+              "Kodenux memberikan solusi yang luar biasa. Sangat membantu bisnis kami tumbuh lebih cepat dengan
+              teknologi yang solid dan desain yang elegan."
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-8 rounded-3xl bg-[#050a12] border border-white/10 hover:border-cyan-500/30 transition-all duration-300">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl font-bold mb-6">
+              S
+            </div>
+            <h5 class="text-white font-bold text-lg">Supriadi</h5>
+            <p class="text-cyan-400 text-sm mb-6 uppercase tracking-wider">Mahasiswa UNIKOM</p>
+            <p class="text-gray-400 text-sm italic leading-relaxed">
+              "Sangat puas dengan performanya. Kode yang dihasilkan sangat bersih dan loading aplikasi sangat cepat di
+              berbagai perangkat."
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-8 rounded-3xl bg-[#050a12] border border-white/10 hover:border-cyan-500/30 transition-all duration-300">
+          <div class="flex flex-col items-center text-center">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center text-white text-2xl font-bold mb-6">
+              R
+            </div>
+            <h5 class="text-white font-bold text-lg">Reski</h5>
+            <p class="text-cyan-400 text-sm mb-6 uppercase tracking-wider">Mahasiswa UNISMUH</p>
+            <p class="text-gray-400 text-sm italic leading-relaxed">
+              "Desain yang modern dan user-friendly. Kodenux benar-benar mengerti bagaimana membuat aplikasi yang
+              cepat sehingga pengumpulan tugas saya juga tepat waktu."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section id="customer-support" class="py-24 bg-[#0a121e]">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto text-center">
+
+        <div class="mb-8 flex justify-center">
+          <div class="p-5 rounded-3xl bg-white/5 border border-white/10 text-cyan-400">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm">Bantuan 24/7</span>
+        <h2 class="text-3xl md:text-5xl font-bold text-white mt-3 mb-6">Kami Siap Membantu Kapan Saja</h2>
+        <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+          Tim dukungan kami tersedia 24 jam sehari untuk memastikan segala kebutuhan digital Anda berjalan lancar.
+          Teknologi terbaru, respons cepat, dan solusi yang disesuaikan khusus untuk kesuksesan bisnis Anda.
+        </p>
+
+        <a href="https://wa.me/6281263673319" target="_blank"
+          class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all transform hover:scale-105">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+          </svg>
+          Hubungi via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-[#050a12] pt-20 pb-10 border-t border-white/5">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+
+        <div class="lg:col-span-2">
+          <a href="#" class="flex items-center gap-3 text-white font-bold text-2xl mb-6">
+            <img src="images/kodenux-logo.png" alt="Kodenux" class="h-9">
+            Kodenux
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
+            Solusi digital praktis untuk kebutuhan bisnis dan akademik Anda. Membangun masa depan digital dengan inovasi
+            AI, backend tangguh, dan perangkat lunak siap pakai.
+          </p>
+          <div class="text-gray-300 text-sm space-y-2">
+            <p class="flex items-center gap-2">✉️ kodenux@gmail.com</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Company</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li><a href="#about" class="hover:text-cyan-400 transition">About Us</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Services</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li><a href="#services" class="hover:text-cyan-400 transition">Corporate Web Presence</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition">REST API (Go/Java)</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition">AI & Chatbot</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Marketplace</h4>
+          <ul class="space-y-4 text-gray-400 text-sm">
+            <li><a href="https://shop.kodenux.com" target="_blank"
+                class="text-cyan-400 font-semibold hover:text-white transition">Browse Apps →</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+        <p>© 2026 Kodenux. All rights reserved.</p>
+        <p>Built with passion for digital innovation</p>
+      </div>
+    </div>
+  </footer>
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-8 right-8 p-3 bg-cyan-500 text-white rounded-full shadow-lg hover:bg-cyan-400 transition-all z-50">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+        });
+      }
+    });
+  </script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
